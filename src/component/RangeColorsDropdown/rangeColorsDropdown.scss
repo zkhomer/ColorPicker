@@ -1,0 +1,116 @@
+.color_range img {
+  width: 10px;
+  height: 10px;
+}
+
+.color_range-shevron {
+  cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+  transition: all 0.4s;
+}
+
+.rangeColorDrop__list {
+  position: absolute;
+  flex-direction: column;
+  background-color: #fafafa;
+  right: 0;
+  top: 60px;
+  border-radius: 10px;
+  padding: 0 10px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -37px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #fafafa;
+  }
+
+
+  &-itemText {
+    color: darkgray;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+  }
+
+  &-itemInput {
+    margin: 10px;
+  }
+}
+
+.btn__ok {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  left: 125px;
+  transition: color 0.3s;
+
+  &:hover {
+    background-color: #d4cdcd;
+    color: green;
+  }
+}
+
+.btn__cancel {
+  background-color: #a19f9f;
+  color: #6d6d6d;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  left: 120px;
+  transition: color 0.3s;
+
+  &:hover {
+    background-color: #716969;
+    color: #0d170d;
+  }
+}
+
+
+.rangeColorDrop__list-itemInput {
+  -webkit-appearance: none;
+  margin: 20px 0;
+  width: 200px;
+}
+
+.rangeColorDrop__list-itemInput::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.7px;
+  cursor: pointer;
+  border-radius: 1.3px;
+
+}
+
+.rangeColorDrop__list-itemInput::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0 0 1px #0d0d0d;
+  border: 1px solid #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+.input-red {
+  background: linear-gradient(90deg, rgb(243, 75, 75) 0%, rgba(242, 8, 8, 1) 1%, rgba(0, 0, 0, 1) 100%);
+}
+
+.input-green {
+  background: linear-gradient(90deg, rgb(109, 236, 81) 0%, rgb(127, 234, 99) 1%, rgb(4, 7, 0) 100%);
+}
+
+.input-blue {
+  background: linear-gradient(90deg, rgb(42, 175, 213) 0%, rgb(80, 162, 229) 1%, rgb(0, 2, 5) 100%);
+}

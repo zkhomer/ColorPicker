@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import {ColorPicker} from "./component/ColorPicker"
 
 function App() {
+
+  const colors =  [{name: 'red', value: '#ff0000'},{name: 'yellow', value: '#ffcc33'},{name: 'green', value: '#11a806'}, {name: 'blue', value: '#0066ff'} ];
+  const value  =  '#000000';
+  const onChange = (color) =>  console.log('color: ', color, ' has been selected') ;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <ColorPicker value={value} onChange={onChange} colors={colors}/>
+    </>
   );
 }
 
